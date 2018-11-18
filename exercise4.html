@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sing In</title>
+</head>
+<body>
+	<h1>Sign in </h1>
+	<form>
+		<!-- Kod za unos imena i prezimena -->
+		<label for="username">First Name</label> 
+		<input id="username" type="text" name="firstname"  placeholder="Harun"required>
+		<label for="lastname">Last Name </label>
+		<input id="lastname" type="text" name="lastname"  placeholder="Kaknjo"required>	<br>
+		<label>Male<input type="radio" name="radiobutton" ></label>
+		<label>Female<input type="radio" name="radiobutton" ></label>
+		<label>Other<input type="radio" name="radiobutton" ></label><br>
+
+		<label for="email">Email</label>
+		<input id = "email" type="email" name="email" required>
+		<label for="password">Password</label>
+		<input type="password" name="password" minlength="5" maxlength="10" required><br>
+
+		<label>Birthday</label>
+		<select>
+			<option>Day</option>
+		</select>
+		<select>
+			<option>Month</option>
+		</select>
+		<select >
+			<option>Year</option>
+		</select>	
+		 <p>I agree to the terms and conditions  <input type="checkbox" name="checkbox"> </p><br>
+		 
+
+		 <button>Submit</button>
+					
+
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+
+
+/* Svakom elementu unutar body taga postavlja zadanu boju. */
+body{
+  background-color:#bdc3c7;
+}
+
+/* Svaki h1 naslov ce imati zadanu boju. */
+h1{
+  color:#9b59b6;
+}
+
+/* Svaki h2 nasklov ce biti narandast. */
+h2{
+  color:orange;
+}
+
+/* Svaki li ce imati zadanu boju */
+li{
+  color:lightblue;
+}
+
+/* Svaki paragraf ce imati pozadinsku boju zutu */
+p{
+  background-color: yellow;
+}
+
+
+input{
+  border-color: red;
+  border:3px;
+}
+/* Postavljamo boju za hello klasu, klasu oznacavamo sa tackom na pocetku. */
+.hello{
+  background-color: #FFF;
+
+}
+/* # oznacava da se radi o IDu odnosno tacno odredeni element ce imati zadane stylove. */
+#special{
+  border-style: solid;
+  bored-color:rgb(11, 107, 107);
+  border-width:2px;
+}
+
+/* Descedant selektor odnosno svaki paragraf unutar diva ce imati zadane stajlove. */
+div p{
+  font-size:25px;
+}
+/* Selektor pomocu kojeg za svaki input koji je typa "text" postavlja zadani style.  */
+input[type="text"]{
+  background-color: gray;
+}
+
+/* Selektor koji za svaki paragraf koji se nalazi unutar treceg diva postavlja zadani style. */
+div:nth-of-type(3) p{
+  background: pink;
+}
+
+/* Postavlja drugom paragrafu unutar treceg diva zadane stajlove. */
+div:nth-of-type(3) p:nth-of-type(2){
+	border: 5px solid white;
+}
+/* Selektor koji za svaki em unutar treceg diva postavlja zadane stylove. */
+div:nth-of-type(3) em{
+  color:white;
+  font-size:20px;
+}
+
+
+/* Za svaki input koji je checked postavlja lijevu marginu na 50 px. */
+input:checked{
+  left-margin:50px;
+}
+
+
+
+label{
+	text-transform:lowercase;/* Transformise tekst npr u mala i velika slova odnosno lowercase ili uppercase.*/
+}
+/* Postavit ce prvo slovo unutar special IDa na zadani style. */
+#special::first-letter{
+  color:green;
+  font-size: 100;
+}
+
+/* Selektor koji kada predemo misem preko naznacenog dijela postavlja style. */
+h1:hover{
+  color:blue;
+}
+
+/* Svaki link koji je klikan postavlja zadani style. */
+a:visited{
+  color:gray;
+
+}

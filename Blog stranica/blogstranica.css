@@ -1,0 +1,54 @@
+/* Body styleovi */
+body{
+  /* Velicina 60% ukupne velicine stranice */
+  width:60%;
+  /* Ako je velicina 60% da bi dobili body na sredini stavljamo lijevu i desnu marginu na po 20 % */
+  margin-left:20%;
+  margin-right:20%;
+  /* Postavljanje gornje i donje margine na 2% */
+  margin-top:2%;
+  margin-bottom: 2%;
+  /* Border oko cijelog bodya */
+  border: 20px solid #bdc3c7;
+  /* Padding izmedu elemenata bodya 5px */
+  padding:5px;
+}
+/* Stylovi za paragrafe */
+p{
+
+  /* Margina na svaki paragraf 1.66 % */
+  margin:1.66%;
+  /* Font koji se nalazi na linku Google fontova upotrebljen za svaki paragraf */
+  font-family:'Source Sans Pro', sans-serif;
+
+}
+/* Styleovi h naslova */
+h1 {
+ /* Postavljanje lijeve margine tako da bude u liniji sa ostalim tekstom */
+  margin-left:1.66%;
+  /* Donja margina da udaljimo naslov od paragrafa */
+  margin-bottom:2%;
+
+  font-family:'Source Sans Pro', sans-serif;
+
+
+}
+/* Styleovi za klasu date1 odnosno za datume u vrhu stranice */
+.date1{
+/* Razmak izmedu svakog slova 5px */
+  letter-spacing:5px;
+  color:#3498db;
+  /* Postavlja sva slova u velika */
+  text-transform:uppercase;
+
+}
+/* Stylovi za klasu koja oznacava prve paragrafe */
+.paragraf1{
+  /* Lijevi border na pocetku svakog prvog paragrafa */
+  border-left:5px solid #bdc3c7;
+}
+/* Linija izmedu dva naslova */
+hr{
+   /* Postavljamo liniju tako da bude i liniji sa ostalim tekstom */
+  margin:1.66%;
+}

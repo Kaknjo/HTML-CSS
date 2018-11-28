@@ -1,0 +1,26 @@
+/* Postavljanje stylova za paragraf*/
+p{
+  /* Koristen font sa Google fonts Railway */
+  font-family:Raleway;
+  /* Postavljanje margine na 1.66% */
+  margin:1.66%;
+  /* Border koji predstavlja ukrasnu liniju */
+  border-bottom: 2px solid #f1f1f1;
+  /* Postavljamo velicinu paragrafa na 30% prostora */
+  width:30%;
+  /* Odvajamo tekst od linije za 20 px */
+  padding-bottom: 20px ;
+  /* Style kojim postavljamo da su nam  sve velika slova */
+  text-transform:uppercase;
+}
+img{
+  /* Cilj je bio da u jednom redu imamo tri slike tako da stavljamo velicinu slika na 30 % */
+/* Korisna stvar kod procentualnog izrazavanja velicina jeste da kada smanjimo stranicu slike ce i dalje da zauzimaju 30% PROSTORA */
+  width:30%;
+  /* Svaka slika nam uzima 30% bodya ostaje nam 10% posto imamo 3 slike i 6 margina postavljamo marginu 10/6 odnosno 1.66% i razmak izmedu svake sliek postaje isti */
+  
+  margin:1.66%;
+  /* Float style postavlja element sa jedne il druge strane containera tako da npr text ili neki inline element mogu da stoje pokraj */
+  float:left;
+
+}

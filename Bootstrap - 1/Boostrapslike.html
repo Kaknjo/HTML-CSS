@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Slike</title>
+    <!-- Incijaliziramo link na kom se nalaze Bootstrap fajlovi -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!-- Dodajemo klasu navbar-default i dobijamo prostor za osnovni navbar. -->
+      <nav class="navbar navbar-inverse">
+        <!-- Postavljamo sadrzaj navbara unutar containera. -->
+        <div class="container">
+        <!-- Unosim neke opcije u navbar i to u lijevom cosku . -->
+        <div class="navbar-header">
+          <!-- Dodajemo tkzv "hamburger" dugme koje se pojavljuje kada se stranica ,
+          smanji na small verziju i napravljeno je od html tagova. -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Naznacava da se radi o linku koji vodi na pocetnu stranu. -->
+          <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+Slike</a>
+        </div>
+        <!-- Sakuplja sve elemente unutar diva koji ce biti sakriveni kada se stranica smanji. -->
+        <!-- Napomena id ovog diva i id button tipke moraju biti isti. -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!-- Dodavanje novih opcija u lijevo dio navbara. -->
+        <div class="nav navbar-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Home</a></li>
+        </div>
+        <nav class="nav navbar-nav navbar-right">
+          <li><a href="#">Sing Up</a></li>
+          <li><a href="#">Login</a></li>
+
+        </nav>
+        </div>
+        </div>
+      </nav>
+      <!-- Dodajemo container tako da nam svi elemnti budu u istoj liniji  -->
+      <div class="container">
+        <!-- Dodajemo jumbotron tj kvadrat obojen sivom bojom u kom se nalazi naslov h1 i tekst  -->
+        <div class="jumbotron">
+          <h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+ Ovo je stranica sa slikama</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis dui lectus, ut consequat lacus consequat sit amet. Vivamus bibendum.</p>
+        </div>
+<!-- Inicijaliziramo jedan red u kom ce se nalaziti tri slike  -->
+      <div class="row">
+        <!-- Klasa koja nam odreduje koliko ce se slika nalaziti u jednom redu i za koju velicinu ekrana. -->
+        <div class="col-lg-4 col-sm-6">
+          <!-- Stavljamo slike u kvadrate sa borderom okolo i automatski velicina se podesi -->
+          <div class="thumbnail">
+            <!-- Ucitavamo sliku sa mjesta na kom se nalazi -->
+          <img src="plaza.jpg" alt="">
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+          <img src="slika2.jpg" alt="">
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+          <img src="slika3.jpg" alt="">
+
+          </div>
+        </div>
+      </div>
+        	<div class="row">
+            <div class="col-lg-4 col-sm-6">
+              <div class="thumbnail">
+                <img src="slika4.jpg" alt="">
+
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="thumbnail">
+                <img src="slika5.jpg" alt="">
+
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="thumbnail">
+                <img src="slika6.jpg" alt="">
+
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <img src="slika7.jpg" alt="">
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6">
+              <div class="thumbnail">
+                <img src="slika8.jpg" alt="">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="slika9.jpg" alt="">
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+      </div>
+</div>
+  </body>
+</html>

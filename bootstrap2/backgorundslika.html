@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Background image</title> 
+	<!-- Povezivanje CSSa sa HTMLom -->
+	<link rel="stylesheet" type="text/css" href="backgroundslika.css">
+
+	<!-- Povezivaje Bootstrap fajlova sa serverom na kom se nalaze. -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 
+   Link koji povezuje Google Font sa stranicom na kom se nalazi. --> -->
+  	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+</head>
+<body>
+	<!-- Dodajemo default  navbar sa klasom navbar navbar-default.
+	Default navbar dolazi sa unaprijed zadanom bijelom bojom i svaki element koji dodamo ima unaprijed zadanu boju koju dobija kao i hover kada kliknemo na njega. -->
+	<!-- Navbar-fixed-top fiksira navbar uvijek na vrh stranice tj kako scrolamo navbar ostaje uvijek na vrhu. -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	<!-- Div kojim oznavamo da se elementi unutar navbara nalaze u containeru odnosno poravnavaju se sa ostalim elementima u containeru tj ne ide skroz do ruba stranice. -->
+    <div class="container">
+
+    	<div class="navbar-header">
+    	<!--    Za lakse koristenje na mobitelu dodaje "hamburger" dugme koje se pojavljuje kada se stranica smanji odnosno kada se koristii kao mobilna verzija.
+   Svi elementi osim imena tj branda ce nestati i pojavit ce se kada kliknemo na hambureger tipku. -->
+
+ <!--   Data-target oznacava koji ce elementi biti skariveni unutar hamburger dugmeta.
+   Div u kom se nalaze elementi koje zelimo sakriti unutar "hamburgera" moraju imati isti ID kao i ID koji unosimo u data-target. -->
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        		<span class="sr-only">Toggle navigation</span>
+      <!--  	Span je inline tag u ovom slucaju ga koristimo da bi smo dodali svaku pojedinacnu liniju kako bi kreirali "Hamburger" dugme. -->
+        		<span class="icon-bar"></span> 
+       			<span class="icon-bar"></span>
+       			<span class="icon-bar"></span>
+      		</button>
+      <!-- U navbar brand obicno oznacava da se tu nalazi naziv firme/stranice i  sl. -->
+      		<a class="navbar-brand" href="#">Purffect Match</a>
+   		</div>
+    <!-- Div u kojem se nalaze svi elementi koji ce biti sakriveni unutar "Hamburger " buttona kada se stranica smanji. -->
+   		<div id="navbar" class="collapse navbar-collapse">
+  <!--     Dodajemo elemente u navbar.
+      Klasa active znaci da element koji je unutar te klase izgledati kao da je aktivan. -->
+     		<ul class="nav navbar-nav">
+        		<li class="active"><a href="#"> Home </a></li>
+        		<li><a href="#">About</a></li>
+      		</ul>
+  
+      		<ul class="nav navbar-nav navbar-right">
+        		<li><a href="#">Sign Up</a></li>
+        		<li><a href="#">Login</a></li>
+       
+      		</ul>
+    	</div>
+    </div>
+</nav>
+	<!-- Dodavanje containera u kom ce se nalaziti sve od teksta sto se nalazi na sredinic stranice.
+	Stavljamo sve u container iz razloga kako ne bi morali sve posebno da pomjeramo  i stimamo marginu i padding. -->
+
+	<div class="container">
+		<!-- Inicijaliziramo red -->
+		<div class="row">
+				<!-- Incijaliziramo colonu i to za veliki ekran koja ce zauzimati cijelu povrsinu tj svih 12 mogucih polja. -->
+			<div class="col-lg-12">
+				<div class="sadrzaj">
+					<h1>Purrfect match</h1>
+					<h3>The Only Human - Feline Dating App </h3>
+					<!-- Dodajemo ukrasnu horizontalnu liniju. -->
+					<hr> 
+					<!-- Dodajemo default Bootstrap button sa btn btn-default klasom. -->
+					<!-- Btn-lg nagalasavamo veliki button . -->
+					<button class="btn btn-default btn-lg"> Submit it</button>
+				</div>
+				<!-- Incijaliziramo colonu i to za veliki ekran koja ce zauzimati cijelu povrsinu tj svih 12 mogucih polja. -->
+			</div>
+		</div>
+	</div>
+			<!-- Instaliranje JavaScript i Jquery datoteka odsnono povezivanje HTMLa sa linkom na kom se nalaze te datoteke.
+	JavaScript i Jquery dodajemo kako bi buttoni koje dodamo imali funkcionalnost odnosno bez ukljucivanja Javascripa i Jquerya klik na button ne bi imao nikakvu funkcionalost. -->
+		<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+<!-- 
+</body>
+</html>

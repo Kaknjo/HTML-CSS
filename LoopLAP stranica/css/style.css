@@ -1,0 +1,54 @@
+body{
+	background-color: #333;
+	color:#fff;
+}
+.navbar{
+	border-bottom:#008e96 solid 3px;
+	opacity: 0.8;
+}
+/* DODAJEMO SLIKU U HOME DIO */
+#home{
+	background: url(../img/home-slika.jpg);
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 700px;
+}
+/* 	POSTAVLJAMO UNUTAR HOME TAGA SLIKU TAKO DA JOJ SMANJIMO VIDLJIVOST KAKO BI TEKST BOLJE DOSAO DO IZRAZA */
+#home .home-overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	min-height: 700px;
+	background:rgba(0,0,0,0.7);
+}
+/* POMJERAMO ELEMENTE UNUTAR HOME INNER KLASE DODAVAJUCI IM PADDING TOP TAKO DA SE PRIKAZUJU ISPOD NAVBARA */ 
+#home .home-inner{
+	padding-top:150px;
+}
+#home .card-form{
+	opacity:0.8;
+	margin-top:20px;
+}
+/* MIJENJAMO CHECKBOX IKONE */ 
+#home .fas, {
+	color:#008ed6;
+	background:#fff;
+	padding:5px;
+	border-radius: 4px;
+}
+#explore-glavnidio .fas, #share-glavnidio .fas{
+	background:#333;
+	color:#fff;
+	padding:5px;
+	border-radius:5px;
+}
+
+#create-glavnidio .fas{
+	background:#fff;
+	color:#008ed6;
+	padding:5px;
+	border-radius: 5px
+}

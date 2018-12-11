@@ -1,0 +1,38 @@
+/* Kada koristim .scss mozemo da definisemo varijable i da mijenjamo i boostrap boje i klase.
+TO radimo pomocu Koala softwarea na kom smo podesili da se fajl styles.scss kompajlira u style.css*/ 
+/*Mijenjamo primary boju u boju koju smo mi podesili i poslije u kodu mozemo da koristimo primary kao varijablu */ 
+$primary:#3292a6;
+/* Definisemo varijablu primary-overlay koju cemo koristiti kada budemo postavljali background sliku kako bi podesili overlay preko slike.*/ 
+/*Primary overlay varijabla ima istu boju kao i primary varijabla samo koristimo rgba nacin odabira boje jer mozemo podesiti transparent.*/
+$primary-overlay:rgba(50,146,166,0.8);
+
+body{
+    margin-top:105px;
+
+}
+
+#showcase{
+    position: relative;
+    min-height: 705px;
+    background: url("../img/mountains.jpg");
+  
+
+.showcase-overlay{
+    background:$primary-overlay;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+}
+.navbar{
+    box-shadow:2px 2px 5px $primary;
+    opacity:0.9;
+    background:#fff;
+/* Isto sto i (.navbar .nav-item) u css, direktno postavljanje .nav-item unutar .navbar klase nam omogucuje scss.*/
+    .nav-item{
+        font-size:1.4rem;
+        padding-right: 1.4rem;
+    }
+}
